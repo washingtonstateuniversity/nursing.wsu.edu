@@ -7,3 +7,443 @@
  Template:       spine
  Version:        0.0.1
 */
+
+
+
+/*-------------- HEADER SHELF ----------------------*/
+.header-shelf-wrapper {
+	position: relative;
+	background: #fff;
+	z-index: 125;
+}
+
+/* ----- header-shelf -----*/
+/* column one */
+.home .fluid .header-shelf.row.triptych .column.one {
+	border: 1px solid #dbdbdb;
+	border-top: none;
+	border-bottom: none;
+	width: 25%;
+}
+
+.wsu-logo {
+	padding: 2rem 2rem 1.3rem;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.wsu-logo img {
+	width: 100%;
+}
+
+/* column two (empty) */
+.header-shelf .column.two {
+	height: 1px;
+}
+
+.home .fluid .row.triptych .column.two {
+	width: 62.5%;
+}
+
+.home .fluid .main-header .row.triptych.header-shelf .column.two {
+	padding: 1.5rem;
+	position: absolute;
+	left: 25%;
+	bottom: 20px;
+}
+
+.header-shelf .column.two li:after,
+.header-shelf .column.two ul:after {
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+/* column three */
+.home .fluid .main-header .row.triptych .column.three {
+	border: 1px solid #dbdbdb;
+	border-top: none;
+	border-bottom: none;
+	width: 12.5%;
+}
+
+.header-shelf .column.three {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+/*-------------- HEADER DRAWER --------------------*/
+.header-drawer-wrapper {
+	display: none;
+}
+
+/*----- header-drawer -----*/
+.header-drawer-wrapper {
+	background: #363636;
+	border-bottom: 5px solid #981e32;
+	font-size: .8rem;
+}
+
+.header-drawer .column > div {
+	padding: 1.5rem;
+}
+
+.header-drawer ul,
+.header-drawer li,
+.mega-menu-labels-wrapper ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* column one */
+section.single.triptych.row.header-drawer:before {
+	position: absolute;
+	content: "";
+	visibility: visible;
+	background: rgba(0,0,0,.1);
+	height: 100%;
+	width: 25%;
+	left: 0;
+}
+
+/* mega-menu */
+.wsu-mega-nav-container {
+	padding-bottom: 1rem;
+}
+
+.header-drawer .two .mega-menu-wrapper > ul > li,
+.mega-menu-labels-wrapper li {
+	float: left;
+	width: 20%;
+}
+
+#mega-menu .sub-menu {
+	padding: 0 .2rem 0 0;
+}
+
+.mega-menu-labels-wrapper > ul > li > a {
+	color: #404040;
+	font-size: .9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+}
+
+.mega-menu-labels-wrapper > ul > li > a:hover {
+	color: #981e32;
+}
+
+.mega-menu-wrapper > ul > li > a {
+	display: none;
+}
+
+#mega-menu .sub-menu li,
+#signature-menu li {
+	padding-bottom: .7rem;
+}
+
+#mega-menu .sub-menu a,
+.signature-menu-wrapper a {
+	color: #c8c8c8;
+	display: block;
+	line-height: 1.2;
+	padding-right: .5rem;
+}
+
+.top-level-links-label {
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.top-level-links-label {
+	background: #efefef;
+	position: absolute;
+	top: 0;
+	bottom: 55%;
+	padding-top: 12%;
+	font-size: .8rem;
+}
+
+/* ----- header-shelf -----*/
+/* column one */
+.home .fluid .header-shelf.row.triptych .column.one {
+ border: 1px solid #dbdbdb;
+ border-top: none;
+ border-bottom: none;
+ width: 25%;
+}
+
+.wsu-logo {
+ padding: 2rem 2rem 1.3rem;
+ width: 100%;
+ box-sizing: border-box;
+}
+
+.wsu-logo img {
+ width: 100%;
+}
+
+/* column two (empty) */
+.header-shelf .column.two {
+ height: 1px;
+}
+
+.home .fluid .row.triptych .column.two {
+ width: 62.5%;
+}
+
+.home .fluid .main-header .row.triptych.header-shelf .column.two {
+ padding: 1.5rem;
+ position: absolute;
+ left: 25%;
+ bottom: 20px;
+}
+
+.header-shelf .column.two li:after,
+.header-shelf .column.two ul:after {
+ content: "";
+ visibility: hidden;
+ display: block;
+ height: 0;
+ clear: both;
+}
+
+/* column three */
+.home .fluid .main-header .row.triptych .column.three {
+ border: 1px solid #dbdbdb;
+ border-top: none;
+ border-bottom: none;
+ width: 12.5%;
+}
+
+.header-shelf .column.three {
+ position: absolute;
+ right: 0;
+ top: 0;
+ bottom: 0;
+}
+
+.top-level-links-label,
+.search-label {
+ float: left;
+ text-align: center;
+ text-transform: uppercase;
+ width: 100%;
+}
+
+.top-level-links-label {
+ background: #efefef;
+ position: absolute;
+ top: 0;
+ bottom: 55%;
+ padding-top: 12%;
+ font-size: .8rem;
+ transition: background .3s ease;
+}
+
+.top-level-links-label:hover {
+ background: #dbdbdb;
+}
+
+.search-label {
+ position: absolute;
+ bottom: 20px;
+ font-size: .9rem;
+ font-weight: 700;
+ color: #981e32;
+ transition: color .3s ease;
+}
+
+.search-label:hover {
+ color: #5e6a71;
+}
+
+.search-label:after {
+ content: "$";
+ font-family: Spine-Icons;
+ margin: 0 -.25rem 0 .5rem;
+ position: relative;
+ top: .125rem;
+}
+
+/*----- header-drawer -----*/
+.header-drawer-wrapper {
+ background: #363636;
+ border-bottom: 5px solid #981e32;
+ font-size: .8rem;
+ position: relative;
+}
+
+.header-drawer .column > div {
+ padding: 1.5rem;
+}
+
+.header-drawer ul,
+.header-drawer li,
+.mega-menu-labels-wrapper ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+/* column one */
+section.single.triptych.row.header-drawer:before {
+ position: absolute;
+ content: "";
+ visibility: visible;
+ background: rgba(0,0,0,.1);
+ height: 100%;
+ width: 25%;
+ left: 0;
+}
+
+/* mega-menu */
+.wsu-mega-nav-container {
+ padding-bottom: 1rem;
+}
+
+.header-drawer .two .mega-menu-wrapper > ul > li,
+.mega-menu-labels-wrapper li {
+ float: left;
+ width: 20%;
+}
+
+#mega-menu .sub-menu {
+ padding: 0 .2rem 0 0;
+}
+
+.mega-menu-labels-wrapper > ul > li > a {
+ color: #404040;
+ font-size: .9rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ display: block;
+}
+
+.mega-menu-labels-wrapper > ul > li > a:hover {
+ color: #981e32;
+}
+
+.mega-menu-wrapper > ul > li > a {
+ display: none;
+}
+
+#mega-menu .sub-menu li,
+#signature-menu li {
+ padding-bottom: .7rem;
+}
+
+#mega-menu .sub-menu a,
+.signature-menu-wrapper a {
+ color: #c8c8c8;
+ display: block;
+ line-height: 1.2;
+ padding-right: .5rem;
+}
+
+/* - closing Xs - */
+.close-header-drawer {
+ position: absolute;
+ bottom: 1rem;
+ right: 1rem;
+ color: #fff;
+ font-size: 2rem;
+ font-weight: 300;
+ cursor: pointer;
+ transition: color .3s ease;
+}
+
+.close-header-drawer:hover {
+ color: #c60c30;
+}
+
+/*---------------- Responsive ----------------------*/
+@media screen and (max-width: 1200px) {
+ .home .header-shelf .column.three {
+  bottom: inherit;
+ }
+
+ .fluid .main-header .row.triptych .column.three {
+  width: auto;
+  border: 1px solid #dbdbdb;
+ }
+
+ .home .fluid .main-header .row.triptych .column.three {
+  width: 50%;
+  border: none;
+ }
+
+ .top-level-links-label {
+  width: auto;
+  bottom: inherit;
+  top: 0;
+  padding: .5rem 1rem;
+  position: relative;
+  line-height: 1;
+  font-size: .8rem;
+  font-weight: 400;
+  float: right;
+ }
+
+ .top-level-links-label {
+  border-right: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding-top: calc(1px + .5rem);
+  float: right;
+ }
+
+ .home .fluid .main-header .row.triptych.header-shelf .column.two {
+  bottom: 10px;
+ }
+
+ .home .fluid .main-header .row.triptych.header-shelf .column.two,
+ .home .fluid .row.triptych .column.two {
+  width: 75%;
+ }
+}
+
+@media screen and (max-width: 989px) {
+ .home #binder.fluid main {
+  width: 100% !important;
+  margin-left: 0;
+ }
+
+}
+
+@media screen and (max-width: 791px) {
+ .wsu-logo {
+  padding: 2rem 1rem 1.3rem;
+ }
+
+ #binder.fluid main {
+  margin-top: 0;
+ }
+
+ .mega-menu-labels-wrapper > ul > li > a {
+  font-size: .7rem;
+ }
+}
+
+@media screen and (max-width: 700px) {
+ .home .main-header {
+  display: none;
+ }
+
+ .home #spine {
+  display: block;
+ }
+}
+
+@media screen and (max-width: 550px) {
+ .fat-footer-menu {
+  display: none;
+ }
+}
