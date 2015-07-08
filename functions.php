@@ -13,6 +13,9 @@ class WSU_Nursing {
 	 * Register the menus used by the College of Nursing.
 	 */
 	public function register_menus() {
+		// The top menu on the home page, above the mega menu.
+		register_nav_menu( 'top-menu', 'Top Menu' );
+
 		// The primary portion of the Mega Menu at the top of the home page.
 		register_nav_menu( 'mega-menu', 'Mega Menu' );
 

@@ -5,6 +5,18 @@
  */
 if ( is_front_page() ) :
 
+	$top_menu_args = array(
+		'theme_location'  => 'top-menu',
+		'menu'            => 'top-menu',
+		'container'       => 'div',
+		'container_class' => 'top-menu-wrapper',
+		'container_id'    => 'top-menu',
+		'menu_class'      => null,
+		'menu_id'         => null,
+		'items_wrap'      => '<ul>%3$s</ul>',
+		'depth'           => 1,
+	);
+
 	$mega_menu_args = array(
 		'theme_location'  => 'mega-menu',
 		'menu'            => 'mega-menu',
@@ -43,7 +55,13 @@ if ( is_front_page() ) :
 
 	?>
 	<header class="main-header wsu-home-navigation">
+
 		<div class="header-shelf-wrapper">
+			<section class="single row top-menu-container">
+				<div class="column one">
+					<?php wp_nav_menu( $top_menu_args ); ?>
+				</div>
+			</section>
 			<section class="single triptych row header-shelf">
 				<div class="column one">
 					<div class="wsu-logo">
