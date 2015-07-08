@@ -6,6 +6,7 @@ class WSU_Nursing {
 	 */
 	public function __construct() {
 		add_action( 'after_setup_theme', array( $this, 'register_menus' ), 10 );
+		add_action( 'widgets_init', array( $this, 'setup_sidebars' ), 10 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 20 );
 	}
 
@@ -21,9 +22,19 @@ class WSU_Nursing {
 
 		// A section of the Mega Menu, visible when expanded, highlighting signature links.
 		register_nav_menu( 'signature-menu', 'Signature Menu' );
+	}
 
-		// The fat footer menu displayed on the bottom of every page.
-		register_nav_menu( 'fat-footer', 'Fat Footer' );
+	/**
+	 * Setup a fat footer area in which widgets can be used for navigation, text areas, etc...
+	 */
+	public function setup_sidebars() {
+		$fat_footer_args = array(
+			'name'          => 'Fat Footer Area',
+			'id'            => 'fat-footer',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+		);
+		register_sidebar( $fat_footer_args );
 	}
 
 	public function enqueue_scripts() {
