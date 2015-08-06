@@ -350,16 +350,14 @@ section#search-modal {
 
 .top-level-links-label,
 .search-label {
+	position: absolute;
 	cursor: pointer;
-	float: left;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
 }
 
 .top-level-links-label {
-	background: #efefef;
-	position: absolute;
 	top: 0;
 	bottom: 55%;
 	padding-top: 12%;
@@ -367,7 +365,6 @@ section#search-modal {
 }
 
 .search-label {
-	position: absolute;
 	bottom: 20px;
 	font-size: .9rem;
 	font-weight: 700;
@@ -380,31 +377,10 @@ section#search-modal {
 	margin: 0 -.25rem 0 .5rem;
 	position: relative;
 	top: .125rem;
-}
-
-.search-label {
-	float: left;
-	text-align: center;
-	text-transform: uppercase;
-	width: 100%;
-	position: absolute;
-	bottom: 20px;
-	font-size: .9rem;
-	font-weight: 700;
-	color: #981e32;
-	transition: color .3s ease;
 }
 
 .search-label:hover {
 	color: #5e6a71;
-}
-
-.search-label:after {
-	content: "$";
-	font-family: Spine-Icons;
-	margin: 0 -.25rem 0 .5rem;
-	position: relative;
-	top: .125rem;
 }
 
 /* - closing Xs - */
@@ -425,18 +401,28 @@ section#search-modal {
 
 /*---------------- Responsive ----------------------*/
 @media screen and (max-width: 1200px) {
-	.home .header-shelf .column.three {
+	.fluid .header-shelf.row.triptych .column.three {
+		width: 50%;
+		border: none;
 		bottom: inherit;
 	}
 
-	.fluid .main-header .row.triptych .column.three {
-		width: auto;
-		border: 1px solid #dbdbdb;
+	.fluid .header-shelf.row.triptych .column.two {
+		width: 75%;
 	}
 
-	.home .fluid .main-header .row.triptych .column.three {
-		width: 50%;
-		border: none;
+	.top-menu-wrapper {
+		margin-top: 35px;
+	}
+
+	.header-shelf .two a {
+		line-height: 37px;
+	}
+
+	.top-level-links-label,
+	.search-label {
+		position: relative;
+		float: right;
 	}
 
 	.top-level-links-label {
@@ -457,14 +443,17 @@ section#search-modal {
 		padding-top: calc(1px + .5rem);
 		float: right;
 	}
+}
 
-	.home .fluid .main-header .row.triptych.header-shelf .column.two {
-		bottom: 10px;
+@media screen and (max-width: 1100px ) {
+	.fluid .header-shelf.row.triptych .column.one,
+	.fluid .header-drawer.row.triptych .column.one {
+		width: 20%;
 	}
 
-	.home .fluid .main-header .row.triptych.header-shelf .column.two,
-	.home .fluid .row.triptych .column.two {
-		width: 75%;
+	.fluid .header-shelf.row.triptych .column.two,
+	.fluid .header-drawer.row.triptych .column.two {
+		width: 67.5%;
 	}
 }
 
@@ -536,4 +525,3 @@ section#search-modal {
 .campus-links-hide:hover {
 	color: #c60c30;
 }
-
