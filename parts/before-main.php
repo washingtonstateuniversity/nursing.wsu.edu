@@ -45,24 +45,46 @@ $header_mega_menu_args = array(
 	'depth'           => 1,
 );
 
+$wsu_search_args = array(
+	'theme_location'  => 'quick-links',
+	'menu'            => 'quick-links',
+	'container'       => 'div',
+	'container_class' => false,
+	'container_id'    => 'quick-links',
+	'menu_class'      => null,
+	'menu_id'         => null,
+	'items_wrap'      => '<ul>%3$s</ul>',
+	'depth'           => 2,
+);
+
+$wsu_campus_args = array(
+	'theme_location'  => 'top-level-links',
+	'menu'            => 'top-level-links',
+	'container'       => 'div',
+	'container_class' => false,
+	'container_id'    => 'top-level-links',
+	'menu_class'      => null,
+	'menu_id'         => null,
+	'items_wrap'      => '<ul>%3$s</ul>',
+	'depth'           => 1,
+);
 ?>
 <header class="main-header wsu-home-navigation">
 
 	<div class="header-shelf-wrapper">
-		<section class="single row top-menu-container">
-			<div class="column one">
-				<?php wp_nav_menu( $top_menu_args ); ?>
-			</div>
-		</section>
 		<section class="single triptych row header-shelf">
 			<div class="column one">
 				<!-- Empty with purpose. -->
 			</div>
 			<div class="column two wsu-mega-nav-labels">
+				<div class="top-menu-container">
+					<?php wp_nav_menu( $top_menu_args ); ?>
+				</div>
 				<?php wp_nav_menu( $header_mega_menu_args ); ?>
 			</div>
 			<div class="column three wsu-other-nav-placeholder">
-				<!-- placeholder -->
+				<div class="top-level-links-label">WSU Locations</div>
+				<div class="search-label">Search</div>
 			</div>
 		</section>
 	</div>
@@ -79,6 +101,42 @@ $header_mega_menu_args = array(
 			</div>
 		</section>
 		<div class="close-header-drawer">x</div>
+	</div>
+	<!-- Search interface, hidden by default until interaction in header -->
+	<div class="header-search-wrapper header-search-wrapper-hide">
+		<section class="side-right row" id="search-modal">
+			<div class="column one">
+				<div class="header-search-input-wrapper">
+					<form method="get" action="https://search.wsu.edu/Default.aspx">
+						<input name="cx" value="002970099942160159670:yqxxz06m1b0" type="hidden">
+						<input name="cof" value="FORID:11" type="hidden">
+						<input name="sa" value="Search" type="hidden">
+						<label for="header-search">Search</label>
+						<input type="text" value="" name="q" placeholder="Search" class="header-search-input" />
+					</form>
+				</div>
+				<div class="header-search-a-z-wrapper">
+					<span class="search-a-z"><a href="http://index.wsu.edu/">A-Z Index</a></span>
+				</div>
+			</div>
+			<div class="column two">
+				<div class="quick-links-label">Common Searches</div>
+				<?php wp_nav_menu( $wsu_search_args ); ?>
+			</div>
+		</section>
+		<div class="close-header-search">x</div>
+	</div>
+
+	<!-- Campus links, hidden by default until interaction in header -->
+	<div class="campus-links-full-page-wrapper campus-links-hide">
+		<div class="campus-links-close">x</div>
+		<div class="campus-links-internal-wrapper">
+			<section class="single full row" id="campus-modal">
+				<div class="column one">
+					<?php wp_nav_menu( $wsu_campus_args ); ?>
+				</div>
+			</section>
+		</div>
 	</div>
 </header>
 <?php

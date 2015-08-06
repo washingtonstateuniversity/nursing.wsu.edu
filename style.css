@@ -47,6 +47,13 @@
 	width: 12.5%;
 }
 
+.header-shelf .column.three {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
 /*-------------- HEADER SHELF ----------------------*/
 .header-shelf-wrapper {
 	position: relative;
@@ -56,7 +63,7 @@
 }
 
 .header-shelf {
-	height: 55px;
+	height: 110px;
 }
 
 .header-shelf .two a {
@@ -94,6 +101,7 @@
 .mega-menu-labels-wrapper li {
 	float: left;
 	width: 20%;
+	padding: 0;
 }
 
 #mega-menu .sub-menu {
@@ -179,11 +187,8 @@
 }
 
 /* Top Menu */
-#top-menu {
-	padding: .5rem 0;
-}
-
 .top-menu-wrapper ul {
+	padding: 0;
 	font: 300 1rem Open Sans;
 	letter-spacing: 1px;
 	list-style: none;
@@ -192,8 +197,189 @@
 }
 
 .top-menu-wrapper li {
+	float: left;
+	width: 25%;
+	padding: 0;
+	line-height: 0;
+}
+
+/*-------------- CAMPUS LINKS ---------------------*/
+/* Campus overlay */
+/*---------- CAMPUS LINKS ------------------*/
+.campus-links-full-page-wrapper {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(42,48,51,.9);
+	overflow: scroll;
+}
+
+.campus-links-internal-wrapper {
+	position: static;
+	top: 50%;
+	left: 0;
+	width: 50px;
+	background: #fff;
+}
+
+.campus-links-internal-wrapper {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	width: 100%;
+}
+
+.campus-links-internal-wrapper li {
+	height: 50px;
+	width: 100%;
+	color: #000;
+	background: #ececec;
+}
+
+.campus-links-full-page-wrapper {
+	background: #981e32;
+}
+
+.campus-links-internal-wrapper {
+	background: none;
+	top: 15%;
+}
+
+.campus-links-internal-wrapper ul {
+	list-style: none;
+	padding: 0;
+}
+
+.campus-links-internal-wrapper li {
+	font-size: 4rem;
+	float: left;
+	background: none;
+	text-align: center;
+	padding: 0;
+	height: auto;
+}
+
+.campus-links-internal-wrapper li a {
+	font-weight: 300;
+	display: block;
+	text-align: center;
+	width: 100%;
+	border-top: 1px solid rgba(0,0,0,.1);
+	line-height: 1;
+	padding: 1rem 0;
+}
+
+.campus-links-internal-wrapper li a:hover {
+	background: rgba(0,0,0,.05);
+}
+
+/*-------------- HEADER SEARCH --------------------*/
+.header-search-wrapper {
+	display: none;
+	position: absolute;
+	z-index: 125;
+	width: 100%;
+	height: 224px;
+}
+
+.header-search-wrapper-open {
+	display: block;
+}
+
+/*--search bar--*/
+.header-search-input-wrapper,
+.header-search-a-z-wrapper {
+	width: 70%;
 	float: right;
-	width: 20%;
+	margin-right: 10%;
+	margin-top: 2.5rem;
+}
+
+.header-search-a-z-wrapper {
+	margin-top: 1rem;
+	text-align: right;
+}
+
+.header-search-a-z-wrapper a {
+	color: #981e32;
+}
+
+.header-search-input-wrapper label {
+	display: none;
+}
+
+.header-search-input-wrapper input[type=text] {
+	font-size: 1.5rem;
+	font-weight: 300;
+	font-family: Proxima-Nova;
+	width: 100%;
+}
+
+section#search-modal {
+}
+
+.header-search-wrapper {
+	height: auto;
+	padding: 3rem 0;
+	background: #dbdbdb;
+}
+
+.quick-links-label {
+	color: #981e32;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.menu-quick-links-search-container ul {
+	list-style: none;
+	padding: 0;
+}
+
+.menu-quick-links-search-container li {
+	width: 50%;
+	float: left;
+}
+
+.menu-quick-links-search-container li a {
+	color: #5e6a71;
+}
+
+
+.top-level-links-label,
+.search-label {
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.top-level-links-label {
+	background: #efefef;
+	position: absolute;
+	top: 0;
+	bottom: 55%;
+	padding-top: 12%;
+	font-size: .8rem;
+}
+
+.search-label {
+	position: absolute;
+	bottom: 20px;
+	font-size: .9rem;
+	font-weight: 700;
+	color: #981e32;
+}
+
+.search-label:after {
+	content: "$";
+	font-family: Spine-Icons;
+	margin: 0 -.25rem 0 .5rem;
+	position: relative;
+	top: .125rem;
 }
 
 .search-label {
@@ -318,5 +504,36 @@
 	.fat-footer-menu {
 		display: none;
 	}
+}
+
+/* - closing Xs - */
+.close-header-drawer,
+.close-header-search,
+.campus-links-close {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 300;
+	cursor: pointer;
+	transition: color .3s ease;
+}
+
+.campus-links-close {
+	top: 2rem;
+	bottom: inherit;
+	right: 2rem;
+	font-size: 4rem;
+}
+
+.campus-links-hide {
+	display: none;
+}
+
+.close-header-drawer:hover,
+.close-header-search:hover,
+.campus-links-hide:hover {
+	color: #c60c30;
 }
 
