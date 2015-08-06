@@ -11,7 +11,8 @@
 /*-------------- HEADER SHELF ----------------------*/
 .header-shelf-wrapper {
 	position: relative;
-	background: #fff;
+	background-color: #eff0f1;
+	border-bottom: solid 1px #dcdcdc;
 	z-index: 125;
 }
 
@@ -22,16 +23,7 @@
 	border-top: none;
 	border-bottom: none;
 	width: 25%;
-}
-
-.wsu-logo {
-	padding: 2rem 2rem 1.3rem;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-.wsu-logo img {
-	width: 100%;
+	height: 1px;
 }
 
 /* column two (empty) */
@@ -84,6 +76,7 @@
 	background: #363636;
 	border-bottom: 5px solid #981e32;
 	font-size: .8rem;
+	position: relative;
 }
 
 .header-drawer .column > div {
@@ -129,13 +122,11 @@
 	display: none;
 }
 
-#mega-menu .sub-menu li,
-#signature-menu li {
+#mega-menu .sub-menu li {
 	padding-bottom: .7rem;
 }
 
-#mega-menu .sub-menu a,
-.signature-menu-wrapper a {
+#mega-menu .sub-menu a {
 	color: #c8c8c8;
 	display: block;
 	line-height: 1.2;
@@ -148,85 +139,6 @@
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
-}
-
-.top-level-links-label {
-	background: #efefef;
-	position: absolute;
-	top: 0;
-	bottom: 55%;
-	padding-top: 12%;
-	font-size: .8rem;
-}
-
-/* ----- header-shelf -----*/
-/* column one */
-.home .fluid .header-shelf.row.triptych .column.one {
-	border: 1px solid #dbdbdb;
-	border-top: none;
-	border-bottom: none;
-	width: 25%;
-}
-
-.wsu-logo {
-	padding: 2rem 2rem 1.3rem;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-.wsu-logo img {
-	width: 100%;
-}
-
-/* column two (empty) */
-.header-shelf .column.two {
-	height: 1px;
-}
-
-.home .fluid .row.triptych .column.two {
-	width: 62.5%;
-}
-
-.home .fluid .main-header .row.triptych.header-shelf .column.two {
-	padding: 1.5rem;
-	position: absolute;
-	left: 25%;
-	bottom: 20px;
-}
-
-.header-shelf .column.two li:after,
-.header-shelf .column.two ul:after {
-	content: "";
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
-}
-
-/* column three */
-.home .fluid .main-header .row.triptych .column.three {
-	border: 1px solid #dbdbdb;
-	border-top: none;
-	border-bottom: none;
-	width: 12.5%;
-}
-
-.header-shelf .column.three {
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
-
-.top-level-links-label,
-.search-label {
-	float: left;
-	text-align: center;
-	text-transform: uppercase;
-	width: 100%;
-}
-
-.top-level-links-label {
 	background: #efefef;
 	position: absolute;
 	top: 0;
@@ -241,6 +153,10 @@
 }
 
 .search-label {
+	float: left;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
 	position: absolute;
 	bottom: 20px;
 	font-size: .9rem;
@@ -259,70 +175,6 @@
 	margin: 0 -.25rem 0 .5rem;
 	position: relative;
 	top: .125rem;
-}
-
-/*----- header-drawer -----*/
-.header-drawer-wrapper {
-	background: #363636;
-	border-bottom: 5px solid #981e32;
-	font-size: .8rem;
-	position: relative;
-}
-
-.header-drawer .column > div {
-	padding: 1.5rem;
-}
-
-.header-drawer ul,
-.header-drawer li,
-.mega-menu-labels-wrapper ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-/* mega-menu */
-.wsu-mega-nav-container {
-	padding-bottom: 1rem;
-}
-
-.header-drawer .two .mega-menu-wrapper > ul > li,
-.mega-menu-labels-wrapper li {
-	float: left;
-	width: 20%;
-}
-
-#mega-menu .sub-menu {
-	padding: 0 .2rem 0 0;
-}
-
-.mega-menu-labels-wrapper > ul > li > a {
-	color: #404040;
-	font-size: .9rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	display: block;
-}
-
-.mega-menu-labels-wrapper > ul > li > a:hover {
-	color: #981e32;
-}
-
-.mega-menu-wrapper > ul > li > a {
-	display: none;
-}
-
-#mega-menu .sub-menu li,
-#signature-menu li {
-	padding-bottom: .7rem;
-}
-
-#mega-menu .sub-menu a,
-.signature-menu-wrapper a {
-	color: #c8c8c8;
-	display: block;
-	line-height: 1.2;
-	padding-right: .5rem;
 }
 
 /* - closing Xs - */
@@ -429,11 +281,6 @@
 	height: 75%;
 }
 
-.header-shelf-wrapper {
-	background-color: #eff0f1;
-	border-bottom: solid 1px #dcdcdc;
-}
-
 .header-shelf {
 	background-color: #eff0f1;
 	height: 55px;
@@ -509,10 +356,6 @@
 }
 
 .header-drawer-wrapper-open {
-	background-color: #d7dadb;
-}
-
-.wsu-signature-nav-container {
 	background-color: #d7dadb;
 }
 
