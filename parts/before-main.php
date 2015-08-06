@@ -45,18 +45,6 @@ $header_mega_menu_args = array(
 	'depth'           => 1,
 );
 
-$signature_menu_args = array(
-	'theme_location'  => 'signature-menu',
-	'menu'            => 'signature-menu',
-	'container'       => 'div',
-	'container_class' => 'signature-menu-wrapper',
-	'container_id'    => 'signature-menu',
-	'menu_class'      => null,
-	'menu_id'         => null,
-	'items_wrap'      => '<ul>%3$s</ul>',
-	'depth'           => 1,
-);
-
 ?>
 <header class="main-header wsu-home-navigation">
 
@@ -68,9 +56,7 @@ $signature_menu_args = array(
 		</section>
 		<section class="single triptych row header-shelf">
 			<div class="column one">
-				<div class="wsu-logo">
-					<!-- logo will go here -->
-				</div>
+				<!-- Empty with purpose. -->
 			</div>
 			<div class="column two wsu-mega-nav-labels">
 				<?php wp_nav_menu( $header_mega_menu_args ); ?>
@@ -82,8 +68,8 @@ $signature_menu_args = array(
 	</div>
 	<div class="header-drawer-wrapper">
 		<section class="single triptych row header-drawer">
-			<div class="column one wsu-signature-nav-container">
-				<?php wp_nav_menu( $signature_menu_args ); ?>
+			<div class="column one">
+				<!-- Empty with purpose. -->
 			</div>
 			<div class="column two wsu-mega-nav-container">
 				<?php wp_nav_menu( $mega_menu_args ); ?>
