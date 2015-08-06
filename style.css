@@ -8,6 +8,19 @@
  Version:        0.1.0
 */
 
+/*------------ HORIZONTAL NAVIGATION ----------------- */
+.main-header {
+	height: 75%;
+}
+
+.main-header a {
+	color: #5e6a71;
+}
+
+.main-header a:hover {
+	color: #981e32;
+}
+
 /*----------- MEGA MENU STRUCTURE ---------------------*/
 
 /* Setup the structure for the header shelf and drawer. Columns
@@ -114,6 +127,38 @@
 	padding-right: .5rem;
 }
 
+/* Mega Menu */
+.mega-menu-labels-wrapper ul li a {
+	letter-spacing: 1px;
+	font: 600 1rem Open Sans;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+#mega-menu-labels a {
+	color: #464e54;
+}
+
+#mega-menu-labels a:hover {
+	color: #981e32;
+}
+
+.wsu-mega-nav-labels {
+	border: none;
+}
+
+/* Drop Down Menu */
+
+#mega-menu .sub-menu a {
+	color: #464e54;
+}
+
+#mega-menu .sub-menu a:hover {
+	color: #981e32;
+}
+
 .top-level-links-label {
 	cursor: pointer;
 	float: left;
@@ -131,6 +176,24 @@
 
 .top-level-links-label:hover {
 	background: #dbdbdb;
+}
+
+/* Top Menu */
+#top-menu {
+	padding: .5rem 0;
+}
+
+.top-menu-wrapper ul {
+	font: 300 1rem Open Sans;
+	letter-spacing: 1px;
+	list-style: none;
+	text-align: left;
+	text-transform: none;
+}
+
+.top-menu-wrapper li {
+	float: right;
+	width: 20%;
 }
 
 .search-label {
@@ -257,69 +320,3 @@
 	}
 }
 
-/* Horizontal Nav */
-.main-header {
-	height: 75%;
-}
-
-.main-header a {
-	color: #5e6a71;
-}
-
-.main-header a:hover {
-	color: #981e32;
-}
-
-.wsu-other-nav-placeholder {
-	width: 1%;
-}
-
-/* Top Menu */
-#top-menu {
-	padding: .5rem 0;
-}
-
-.top-menu-wrapper ul {
-	font: 300 1rem Open Sans;
-	letter-spacing: 1px;
-	list-style: none;
-	text-align: left;
-	text-transform: none;
-}
-
-.top-menu-wrapper li {
-	float: right;
-	width: 20%;
-}
-
-/* Mega Menu */
-.mega-menu-labels-wrapper ul li a {
-	letter-spacing: 1px;
-	font: 600 1rem Open Sans;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-}
-
-#mega-menu-labels a {
-	color: #464e54;
-}
-
-#mega-menu-labels a:hover {
-	color: #981e32;
-}
-
-.wsu-mega-nav-labels {
-	border: none;
-}
-
-/* Drop Down Menu */
-
-#mega-menu .sub-menu a {
-	color: #464e54;
-}
-
-#mega-menu .sub-menu a:hover {
-	color: #981e32;
-}
