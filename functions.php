@@ -22,6 +22,12 @@ class WSU_Nursing {
 
 		// A section of the Mega Menu, visible when expanded, highlighting signature links.
 		register_nav_menu( 'signature-menu', 'Signature Menu' );
+
+		// A section for campus locations, visible when expanded.
+		register_nav_menu( 'top-level-links', 'Campus Locations' );
+
+		// Items that appear next to the search bar as quick links.
+		register_nav_menu( 'quick-links', 'Search Links' );
 	}
 
 	/**
