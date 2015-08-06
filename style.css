@@ -8,6 +8,32 @@
  Version:        0.1.0
 */
 
+/*----------- MEGA MENU STRUCTURE ---------------------*/
+
+/* Setup the structure for the header shelf and drawer. Columns
+   should be laid out as 25% | 62.5% | 12.5% on all pages. */
+.fluid .header-shelf.row.triptych .one,
+.fluid .header-drawer.row.triptych .one {
+	width: 25%;
+	height: 100%;
+	min-height: 1px;
+}
+
+/* column two (empty) */
+.fluid .header-shelf.row.triptych .two,
+.fluid .header-drawer.row.triptych .two {
+	height: 100%;
+	width: 62.5%;
+}
+
+/* column three */
+.fluid .header-shelf.row.triptych .three,
+.fluid .header-drawer.row.triptych .three {
+	height: 100%;
+	min-height: 1px;
+	width: 12.5%;
+}
+
 /*-------------- HEADER SHELF ----------------------*/
 .header-shelf-wrapper {
 	position: relative;
@@ -16,76 +42,36 @@
 	z-index: 125;
 }
 
-/* ----- header-shelf -----*/
-/* column one */
-.home .fluid .header-shelf.row.triptych .column.one {
-	border: 1px solid #dbdbdb;
-	border-top: none;
-	border-bottom: none;
-	width: 25%;
-	height: 1px;
+.header-shelf {
+	background-color: #eff0f1;
+	height: 55px;
 }
 
-/* column two (empty) */
-.header-shelf .column.two {
-	height: 1px;
-}
-
-.home .fluid .row.triptych .column.two {
-	width: 62.5%;
-}
-
-.home .fluid .main-header .row.triptych.header-shelf .column.two {
-	padding: 1.5rem;
-	position: absolute;
-	left: 25%;
-	bottom: 20px;
-}
-
-.header-shelf .column.two li:after,
-.header-shelf .column.two ul:after {
-	content: "";
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
-}
-
-/* column three */
-.home .fluid .main-header .row.triptych .column.three {
-	border: 1px solid #dbdbdb;
-	border-top: none;
-	border-bottom: none;
-	width: 12.5%;
-}
-
-.header-shelf .column.three {
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
+.header-shelf .two a {
+	line-height: 55px; /* should match header-shelf height */
 }
 
 /*-------------- HEADER DRAWER --------------------*/
 .header-drawer-wrapper {
-	display: none;
-}
-
-/*----- header-drawer -----*/
-.header-drawer-wrapper {
-	background: #363636;
+	display: none; /* Toggled via Javascript */
+	background: #d7dadb;
 	border-bottom: 5px solid #981e32;
 	font-size: .8rem;
 	position: relative;
 }
 
+.header-drawer {
+	background-color: #d7dadb;
+}
+
 .header-drawer .column > div {
-	padding: 1.5rem;
+	padding: 1.5rem 0;
 }
 
 .header-drawer ul,
 .header-drawer li,
 .mega-menu-labels-wrapper ul {
+	text-align: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -281,11 +267,6 @@
 	height: 75%;
 }
 
-.header-shelf {
-	background-color: #eff0f1;
-	height: 55px;
-}
-
 .main-header a {
 	color: #5e6a71;
 }
@@ -326,14 +307,6 @@
 	text-align: left;
 }
 
-.home .fluid .triptych.row.header-shelf .one.column {
-	border: none;
-}
-
-.home .fluid .main-header .triptych.row .three.column {
-	border: none;
-}
-
 #mega-menu-labels a {
 	color: #464e54;
 }
@@ -347,17 +320,6 @@
 }
 
 /* Drop Down Menu */
-.header-drawer {
-	background-color: #d7dadb;
-}
-
-.header-drawer ul {
-	text-align: left;
-}
-
-.header-drawer-wrapper-open {
-	background-color: #d7dadb;
-}
 
 #mega-menu .sub-menu a {
 	color: #464e54;
