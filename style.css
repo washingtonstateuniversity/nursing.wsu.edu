@@ -8,8 +8,6 @@
  Version:        0.1.0
 */
 
-
-
 /*-------------- HEADER SHELF ----------------------*/
 .header-shelf-wrapper {
 	position: relative;
@@ -105,7 +103,7 @@ section.single.triptych.row.header-drawer:before {
 	position: absolute;
 	content: "";
 	visibility: visible;
-	background: rgba(0,0,0,.1);
+	background: rgba(0, 0, 0, .1);
 	height: 100%;
 	width: 25%;
 	left: 0;
@@ -175,275 +173,375 @@ section.single.triptych.row.header-drawer:before {
 /* ----- header-shelf -----*/
 /* column one */
 .home .fluid .header-shelf.row.triptych .column.one {
- border: 1px solid #dbdbdb;
- border-top: none;
- border-bottom: none;
- width: 25%;
+	border: 1px solid #dbdbdb;
+	border-top: none;
+	border-bottom: none;
+	width: 25%;
 }
 
 .wsu-logo {
- padding: 2rem 2rem 1.3rem;
- width: 100%;
- box-sizing: border-box;
+	padding: 2rem 2rem 1.3rem;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .wsu-logo img {
- width: 100%;
+	width: 100%;
 }
 
 /* column two (empty) */
 .header-shelf .column.two {
- height: 1px;
+	height: 1px;
 }
 
 .home .fluid .row.triptych .column.two {
- width: 62.5%;
+	width: 62.5%;
 }
 
 .home .fluid .main-header .row.triptych.header-shelf .column.two {
- padding: 1.5rem;
- position: absolute;
- left: 25%;
- bottom: 20px;
+	padding: 1.5rem;
+	position: absolute;
+	left: 25%;
+	bottom: 20px;
 }
 
 .header-shelf .column.two li:after,
 .header-shelf .column.two ul:after {
- content: "";
- visibility: hidden;
- display: block;
- height: 0;
- clear: both;
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
 }
 
 /* column three */
 .home .fluid .main-header .row.triptych .column.three {
- border: 1px solid #dbdbdb;
- border-top: none;
- border-bottom: none;
- width: 12.5%;
+	border: 1px solid #dbdbdb;
+	border-top: none;
+	border-bottom: none;
+	width: 12.5%;
 }
 
 .header-shelf .column.three {
- position: absolute;
- right: 0;
- top: 0;
- bottom: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 
 .top-level-links-label,
 .search-label {
- float: left;
- text-align: center;
- text-transform: uppercase;
- width: 100%;
+	float: left;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
 }
 
 .top-level-links-label {
- background: #efefef;
- position: absolute;
- top: 0;
- bottom: 55%;
- padding-top: 12%;
- font-size: .8rem;
- transition: background .3s ease;
+	background: #efefef;
+	position: absolute;
+	top: 0;
+	bottom: 55%;
+	padding-top: 12%;
+	font-size: .8rem;
+	transition: background .3s ease;
 }
 
 .top-level-links-label:hover {
- background: #dbdbdb;
+	background: #dbdbdb;
 }
 
 .search-label {
- position: absolute;
- bottom: 20px;
- font-size: .9rem;
- font-weight: 700;
- color: #981e32;
- transition: color .3s ease;
+	position: absolute;
+	bottom: 20px;
+	font-size: .9rem;
+	font-weight: 700;
+	color: #981e32;
+	transition: color .3s ease;
 }
 
 .search-label:hover {
- color: #5e6a71;
+	color: #5e6a71;
 }
 
 .search-label:after {
- content: "$";
- font-family: Spine-Icons;
- margin: 0 -.25rem 0 .5rem;
- position: relative;
- top: .125rem;
+	content: "$";
+	font-family: Spine-Icons;
+	margin: 0 -.25rem 0 .5rem;
+	position: relative;
+	top: .125rem;
 }
 
 /*----- header-drawer -----*/
 .header-drawer-wrapper {
- background: #363636;
- border-bottom: 5px solid #981e32;
- font-size: .8rem;
- position: relative;
+	background: #363636;
+	border-bottom: 5px solid #981e32;
+	font-size: .8rem;
+	position: relative;
 }
 
 .header-drawer .column > div {
- padding: 1.5rem;
+	padding: 1.5rem;
 }
 
 .header-drawer ul,
 .header-drawer li,
 .mega-menu-labels-wrapper ul {
- list-style: none;
- margin: 0;
- padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* column one */
 section.single.triptych.row.header-drawer:before {
- position: absolute;
- content: "";
- visibility: visible;
- background: rgba(0,0,0,.1);
- height: 100%;
- width: 25%;
- left: 0;
+	position: absolute;
+	content: "";
+	visibility: visible;
+	background: rgba(0, 0, 0, .1);
+	height: 100%;
+	width: 25%;
+	left: 0;
 }
 
 /* mega-menu */
 .wsu-mega-nav-container {
- padding-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 
 .header-drawer .two .mega-menu-wrapper > ul > li,
 .mega-menu-labels-wrapper li {
- float: left;
- width: 20%;
+	float: left;
+	width: 20%;
 }
 
 #mega-menu .sub-menu {
- padding: 0 .2rem 0 0;
+	padding: 0 .2rem 0 0;
 }
 
 .mega-menu-labels-wrapper > ul > li > a {
- color: #404040;
- font-size: .9rem;
- font-weight: 700;
- text-transform: uppercase;
- display: block;
+	color: #404040;
+	font-size: .9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
 }
 
 .mega-menu-labels-wrapper > ul > li > a:hover {
- color: #981e32;
+	color: #981e32;
 }
 
 .mega-menu-wrapper > ul > li > a {
- display: none;
+	display: none;
 }
 
 #mega-menu .sub-menu li,
 #signature-menu li {
- padding-bottom: .7rem;
+	padding-bottom: .7rem;
 }
 
 #mega-menu .sub-menu a,
 .signature-menu-wrapper a {
- color: #c8c8c8;
- display: block;
- line-height: 1.2;
- padding-right: .5rem;
+	color: #c8c8c8;
+	display: block;
+	line-height: 1.2;
+	padding-right: .5rem;
 }
 
 /* - closing Xs - */
 .close-header-drawer {
- position: absolute;
- bottom: 1rem;
- right: 1rem;
- color: #fff;
- font-size: 2rem;
- font-weight: 300;
- cursor: pointer;
- transition: color .3s ease;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 300;
+	cursor: pointer;
+	transition: color .3s ease;
 }
 
 .close-header-drawer:hover {
- color: #c60c30;
+	color: #c60c30;
 }
 
 /*---------------- Responsive ----------------------*/
 @media screen and (max-width: 1200px) {
- .home .header-shelf .column.three {
-  bottom: inherit;
- }
+	.home .header-shelf .column.three {
+		bottom: inherit;
+	}
 
- .fluid .main-header .row.triptych .column.three {
-  width: auto;
-  border: 1px solid #dbdbdb;
- }
+	.fluid .main-header .row.triptych .column.three {
+		width: auto;
+		border: 1px solid #dbdbdb;
+	}
 
- .home .fluid .main-header .row.triptych .column.three {
-  width: 50%;
-  border: none;
- }
+	.home .fluid .main-header .row.triptych .column.three {
+		width: 50%;
+		border: none;
+	}
 
- .top-level-links-label {
-  width: auto;
-  bottom: inherit;
-  top: 0;
-  padding: .5rem 1rem;
-  position: relative;
-  line-height: 1;
-  font-size: .8rem;
-  font-weight: 400;
-  float: right;
- }
+	.top-level-links-label {
+		width: auto;
+		bottom: inherit;
+		top: 0;
+		padding: .5rem 1rem;
+		position: relative;
+		line-height: 1;
+		font-size: .8rem;
+		font-weight: 400;
+		float: right;
+	}
 
- .top-level-links-label {
-  border-right: 1px solid #dbdbdb;
-  box-sizing: border-box;
-  padding-top: calc(1px + .5rem);
-  float: right;
- }
+	.top-level-links-label {
+		border-right: 1px solid #dbdbdb;
+		box-sizing: border-box;
+		padding-top: calc(1px + .5rem);
+		float: right;
+	}
 
- .home .fluid .main-header .row.triptych.header-shelf .column.two {
-  bottom: 10px;
- }
+	.home .fluid .main-header .row.triptych.header-shelf .column.two {
+		bottom: 10px;
+	}
 
- .home .fluid .main-header .row.triptych.header-shelf .column.two,
- .home .fluid .row.triptych .column.two {
-  width: 75%;
- }
+	.home .fluid .main-header .row.triptych.header-shelf .column.two,
+	.home .fluid .row.triptych .column.two {
+		width: 75%;
+	}
 }
 
 @media screen and (max-width: 989px) {
- .home #binder.fluid main {
-  width: 100% !important;
-  margin-left: 0;
- }
+	.home #binder.fluid main {
+		width: 100% !important;
+		margin-left: 0;
+	}
 
 }
 
 @media screen and (max-width: 791px) {
- .wsu-logo {
-  padding: 2rem 1rem 1.3rem;
- }
+	.wsu-logo {
+		padding: 2rem 1rem 1.3rem;
+	}
 
- #binder.fluid main {
-  margin-top: 0;
- }
+	#binder.fluid main {
+		margin-top: 0;
+	}
 
- .mega-menu-labels-wrapper > ul > li > a {
-  font-size: .7rem;
- }
+	.mega-menu-labels-wrapper > ul > li > a {
+		font-size: .7rem;
+	}
 }
 
 @media screen and (max-width: 700px) {
- .home .main-header {
-  display: none;
- }
+	.home .main-header {
+		display: none;
+	}
 
- .home #spine {
-  display: block;
- }
+	.home #spine {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 550px) {
- .fat-footer-menu {
-  display: none;
- }
+	.fat-footer-menu {
+		display: none;
+	}
+}
+
+/* Horizontal Nav */
+.main-header {
+	height: 75%;
+}
+
+.header-shelf-wrapper {
+	background-color: #eff0f1;
+	border-bottom: solid 1px #dcdcdc;
+}
+
+.header-shelf {
+	background-color: #eff0f1;
+	height: 55px;
+}
+
+.main-header a {
+	color: #5e6a71;
+}
+
+.main-header a:hover {
+	color: #981e32;
+}
+
+.wsu-other-nav-placeholder {
+	width: 1%;
+}
+
+/* Top Menu */
+#top-menu {
+	padding: .5rem 0;
+}
+
+.top-menu-wrapper ul {
+	font: 300 1rem Open Sans;
+	letter-spacing: 1px;
+	list-style: none;
+	text-align: left;
+	text-transform: none;
+}
+
+.top-menu-wrapper li {
+	float: right;
+	width: 20%;
+}
+
+/* Mega Menu */
+.mega-menu-labels-wrapper ul li a {
+	letter-spacing: 1px;
+	font: 600 1rem Open Sans;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.home .fluid .triptych.row.header-shelf .one.column {
+	border: none;
+}
+
+.home .fluid .main-header .triptych.row .three.column {
+	border: none;
+}
+
+#mega-menu-labels a {
+	color: #464e54;
+}
+
+#mega-menu-labels a:hover {
+	color: #981e32;
+}
+
+.wsu-mega-nav-labels {
+	border: none;
+}
+
+/* Drop Down Menu */
+.header-drawer {
+	background-color: #d7dadb;
+}
+
+.header-drawer ul {
+	text-align: left;
+}
+
+.header-drawer-wrapper-open {
+	background-color: #d7dadb;
+}
+
+.wsu-signature-nav-container {
+	background-color: #d7dadb;
+}
+
+#mega-menu .sub-menu a {
+	color: #464e54;
+}
+
+#mega-menu .sub-menu a:hover {
+	color: #981e32;
 }
