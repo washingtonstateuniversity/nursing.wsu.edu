@@ -11,6 +11,10 @@ var wsuNavigation = wsuNavigation || {};
 		events: {
 			'click #mega-menu-labels ul li a': 'toggleNav',
 			'click .close-header-drawer': 'toggleNav',
+			'click .search-label': 'toggleSearch',
+			'click .close-header-search': 'toggleSearch',
+			'click .top-level-links-label': 'toggleCampuses',
+			'click .campus-links-close': 'toggleCampuses'
 		},
 
 		toggleNav: function(evt){
@@ -25,5 +29,30 @@ var wsuNavigation = wsuNavigation || {};
 				$nav_wrapper.addClass('header-drawer-wrapper-open');
 			}
 		},
+
+		toggleSearch: function(evt){
+			evt.preventDefault();
+
+			var $search_wrapper = $('.header-search-wrapper');
+
+			if ( $search_wrapper.hasClass('header-search-wrapper-open') ) {
+				$search_wrapper.removeClass('header-search-wrapper-open');
+			} else {
+				$search_wrapper.addClass('header-search-wrapper-open');
+				$('.header-search-input').focus();
+			}
+		},
+
+		toggleCampuses: function(evt){
+			evt.preventDefault();
+
+			var $campus_wrapper = $('.campus-links-full-page-wrapper');
+
+			if ( $campus_wrapper.hasClass('campus-links-hide') ) {
+				$campus_wrapper.removeClass('campus-links-hide');
+			} else {
+				$campus_wrapper.addClass('campus-links-hide');
+			}
+		}
 	});
 })(window, Backbone, jQuery, _, wsuNavigation);
