@@ -8,6 +8,10 @@
  Version:        0.2.1
 */
 
+#spine-secondary-menu {
+	display: none;
+}
+
 /*------------ HORIZONTAL NAVIGATION ----------------- */
 .main-header {
 	height: 75%;
@@ -476,6 +480,11 @@ section#search-modal {
 
 	.mega-menu-labels-wrapper > ul > li > a {
 		font-size: .7rem;
+	}
+
+	#spine-secondary-menu {
+		display: block;
+		text-transform: uppercase;
 	}
 }
 
