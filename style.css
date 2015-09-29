@@ -493,9 +493,9 @@ section#search-modal {
 		display: none;
 	}
 
-	.home #spine {
+	/*.home #spine {
 		display: block;
-	}
+	}*/
 }
 
 @media screen and (max-width: 550px) {
