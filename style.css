@@ -462,10 +462,10 @@ section#search-modal {
 }
 
 @media screen and (max-width: 989px) {
-	.home #binder.fluid main {
+	/*.home #binder.fluid main {
 		width: 100% !important;
 		margin-left: 0;
-	}
+	}*/
 
 }
 
