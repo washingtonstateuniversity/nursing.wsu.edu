@@ -466,7 +466,7 @@ section#search-modal {
 		width: 100% !important;
 		margin-left: 0;
 	}*/
-
+	/* CD - commented out this to fix homepage mobile issues (did not delete incase it had a purpose to someone else */
 }
 
 @media screen and (max-width: 791px) {
@@ -496,6 +496,7 @@ section#search-modal {
 	/*.home #spine {
 		display: block;
 	}*/
+	/* CD - commented out this to fix homepage mobile issues (did not delete incase it had a purpose to someone else */
 }
 
 @media screen and (max-width: 550px) {
