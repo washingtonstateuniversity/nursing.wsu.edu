@@ -6,6 +6,7 @@ class WSU_Nursing {
 	 */
 	public function __construct() {
 		add_action( 'widgets_init', array( $this, 'setup_sidebars' ), 10 );
+		add_filter( 'make_the_builder_content', array( $this, 'replace_p_with_figure' ), 99 );
 	}
 
 	/**
@@ -19,6 +20,19 @@ class WSU_Nursing {
 			'after_widget'  => '</div>',
 		);
 		register_sidebar( $fat_footer_args );
+	}
+
+	/**
+	 * Replace paragraphs wrapped around lone images with figure.
+	 *
+	 * @param string $content Original content being stored.
+	 *
+	 * @return string Modified content.
+	 */
+	public function replace_p_with_figure( $content ) {
+		$content = preg_replace('/<p[^>]*>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\/p>/', '<figure class=\"wsu-p-replaced\">$1</figure>', $content);
+
+		return $content;
 	}
 }
 new WSU_Nursing();
