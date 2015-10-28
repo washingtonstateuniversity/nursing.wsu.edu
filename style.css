@@ -535,3 +535,32 @@ section#search-modal {
 .campus-links-hide:hover {
 	color: #c60c30;
 }
+
+
+/* Banner styling */
+
+.builder-section-banner .cycle-next:before,
+.builder-section-banner .cycle-prev:before {
+	content: none;
+	display:none;
+}
+.builder-section-banner .cycle-next {
+	position:relative;
+	margin:.8em 0;
+	max-width:490px;
+	width:100%;
+}
+.builder-section-banner .cycle-next span.next-text {
+	font-style: italic;
+	font-size:1.5rem;
+}
+.builder-section-banner .cycle-next span#next-title {
+	font-weight:800;
+	font-size:1.5rem;
+}
+.builder-section-banner div.inquirebuttons {
+	margin:1em 0;
+}
+.builder-section-banner div.inquirebuttons a {
+	font-size:1.5rem;
+}
