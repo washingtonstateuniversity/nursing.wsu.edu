@@ -560,6 +560,7 @@ section#search-modal {
 }
 .builder-section-banner div.inquirebuttons {
 	margin:1em 0;
+	width:100%;
 }
 .builder-section-banner div.inquirebuttons a {
 	font-size:1.5rem;
