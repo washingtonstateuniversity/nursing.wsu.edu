@@ -7,6 +7,7 @@ class WSU_Nursing {
 	public function __construct() {
 		add_action( 'widgets_init', array( $this, 'setup_sidebars' ), 10 );
 		add_filter( 'make_the_builder_content', array( $this, 'replace_p_with_figure' ), 99 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 20 );
 	}
 
 	/**
@@ -33,6 +34,12 @@ class WSU_Nursing {
 		$content = preg_replace('/<p[^>]*>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\/p>/', '<figure class=\"wsu-p-replaced\">$1</figure>', $content);
 
 		return $content;
+	}
+
+	public function enqueue_scripts() {
+		if ( is_front_page() ) {
+			wp_enqueue_script( 'nursing-home', get_stylesheet_directory_uri() . '/js/nursing-home.js', array( 'jquery' ), spine_get_script_version(), true );
+		}
 	}
 }
 new WSU_Nursing();
