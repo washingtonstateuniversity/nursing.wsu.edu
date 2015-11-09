@@ -403,6 +403,25 @@ section#search-modal {
 	color: #c60c30;
 }
 
+.builder-banner-inner-title {
+	display: none;
+}
+
+span.slide-title-next-container {
+	font-family: 'Open Sans';
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.slide-title-next {
+	font-style: italic;
+}
+
+.builder-banner-slide-title {
+	cursor: pointer;
+	font-weight: 700;
+}
+
 /*---------------- Responsive ----------------------*/
 @media screen and (max-width: 1200px) {
 	.fluid .header-shelf.row.triptych .column.three {
