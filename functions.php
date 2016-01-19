@@ -8,6 +8,7 @@ class WSU_Nursing {
 		add_action( 'widgets_init', array( $this, 'setup_sidebars' ), 10 );
 		add_filter( 'make_the_builder_content', array( $this, 'replace_p_with_figure' ), 99 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 20 );
+		add_action( 'wp_head', array( $this, 'nursing_facebook_pixel' ), 99 );
 	}
 
 	/**
@@ -39,6 +40,30 @@ class WSU_Nursing {
 	public function enqueue_scripts() {
 		if ( is_front_page() ) {
 			wp_enqueue_script( 'nursing-home', get_stylesheet_directory_uri() . '/js/nursing-home.js', array( 'jquery' ), spine_get_script_version(), true );
+		}
+	}
+	
+	/**
+	 * Add a Facebook tracking pixel to the WSU Research Study page on Nursing.
+	 */
+	public function nursing_facebook_pixel() {
+		if ( is_page( 'wsu-research-study' ) ) {
+			?>
+			<!-- Facebook Pixel Code -->
+			<script>
+			!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+			n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+			document,'script','//connect.facebook.net/en_US/fbevents.js');
+			
+			fbq('init', '448447048649179');
+			fbq('track', "PageView");</script>
+			<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=448447048649179&ev=PageView&noscript=1"
+			/></noscript>
+			<!-- End Facebook Pixel Code -->
+			<?php
 		}
 	}
 }
