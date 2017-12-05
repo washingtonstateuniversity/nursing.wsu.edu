@@ -29,6 +29,7 @@
 
 /* Setup the structure for the header shelf and drawer. Columns
    should be laid out as 25% | 62.5% | 12.5% on all pages. */
+
 .fluid .header-shelf.row.triptych .one,
 .fluid .header-drawer.row.triptych .one {
 	width: 25%;
@@ -142,7 +143,7 @@
 /* Mega Menu */
 .mega-menu-labels-wrapper ul li a {
 	letter-spacing: 1px;
-	font: 600 1rem Open Sans;
+	font: 600 1rem "Open Sans";
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -162,7 +163,6 @@
 }
 
 /* Drop Down Menu */
-
 #mega-menu .sub-menu a {
 	color: #464e54;
 }
@@ -193,7 +193,7 @@
 /* Top Menu */
 .top-menu-wrapper ul {
 	padding: 0;
-	font: 300 1rem Open Sans;
+	font: 300 1rem "Open Sans";
 	letter-spacing: 1px;
 	list-style: none;
 	text-align: left;
@@ -208,7 +208,7 @@
 }
 
 /*-------------- CAMPUS LINKS ---------------------*/
-/* Campus overlay */
+
 /*---------- CAMPUS LINKS ------------------*/
 .campus-links-full-page-wrapper {
 	position: fixed;
@@ -217,7 +217,7 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: rgba(42,48,51,.9);
+	background: rgba(42, 48, 51, .9);
 	overflow: scroll;
 }
 
@@ -271,13 +271,13 @@
 	display: block;
 	text-align: center;
 	width: 100%;
-	border-top: 1px solid rgba(0,0,0,.1);
+	border-top: 1px solid rgba(0, 0, 0, .1);
 	line-height: 1;
 	padding: 1rem 0;
 }
 
 .campus-links-internal-wrapper li a:hover {
-	background: rgba(0,0,0,.05);
+	background: rgba(0, 0, 0, .05);
 }
 
 /*-------------- HEADER SEARCH --------------------*/
@@ -315,14 +315,11 @@
 	display: none;
 }
 
-.header-search-input-wrapper input[type=text] {
+.header-search-input-wrapper input[type="text"] {
 	font-size: 1.5rem;
 	font-weight: 300;
 	font-family: Proxima-Nova;
 	width: 100%;
-}
-
-section#search-modal {
 }
 
 .header-search-wrapper {
@@ -350,7 +347,6 @@ section#search-modal {
 .menu-quick-links-search-container li a {
 	color: #5e6a71;
 }
-
 
 .top-level-links-label,
 .search-label {
@@ -408,7 +404,7 @@ section#search-modal {
 }
 
 span.slide-title-next-container {
-	font-family: 'Open Sans';
+	font-family: "Open Sans";
 	font-size: 24px;
 	font-weight: 300;
 }
@@ -424,6 +420,7 @@ span.slide-title-next-container {
 
 /*---------------- Responsive ----------------------*/
 @media screen and (max-width: 1200px) {
+
 	.fluid .header-shelf.row.triptych .column.three {
 		width: 50%;
 		border: none;
@@ -469,6 +466,7 @@ span.slide-title-next-container {
 }
 
 @media screen and (max-width: 1100px ) {
+
 	.fluid .header-shelf.row.triptych .column.one,
 	.fluid .header-drawer.row.triptych .column.one {
 		width: 20%;
@@ -480,15 +478,8 @@ span.slide-title-next-container {
 	}
 }
 
-@media screen and (max-width: 989px) {
-	/*.home #binder.fluid main {
-		width: 100% !important;
-		margin-left: 0;
-	}*/
-	/* CD - commented out this to fix homepage mobile issues (did not delete incase it had a purpose to someone else */
-}
-
 @media screen and (max-width: 791px) {
+
 	.wsu-logo {
 		padding: 2rem 1rem 1.3rem;
 	}
@@ -508,17 +499,14 @@ span.slide-title-next-container {
 }
 
 @media screen and (max-width: 700px) {
+
 	.home .main-header {
 		display: none;
 	}
-
-	/*.home #spine {
-		display: block;
-	}*/
-	/* CD - commented out this to fix homepage mobile issues (did not delete incase it had a purpose to someone else */
 }
 
 @media screen and (max-width: 550px) {
+
 	.fat-footer-menu {
 		display: none;
 	}
@@ -554,3 +542,4 @@ span.slide-title-next-container {
 .campus-links-hide:hover {
 	color: #c60c30;
 }
+/*# sourceMappingURL=style.css.map */
