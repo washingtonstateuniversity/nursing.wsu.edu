@@ -5,10 +5,22 @@ class WSU_Nursing {
 	 * Setup the hooks used by the theme.
 	 */
 	public function __construct() {
+		add_filter( 'spine_child_theme_version', array( $this, 'theme_version' ) );
 		add_action( 'widgets_init', array( $this, 'setup_sidebars' ), 10 );
 		add_filter( 'make_the_builder_content', array( $this, 'replace_p_with_figure' ), 99 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 20 );
 		add_action( 'wp_head', array( $this, 'nursing_facebook_pixel' ), 99 );
+	}
+
+	/**
+	 * Provides a theme version for use in cache busting.
+	 *
+	 * @since 0.4.0
+	 *
+	 * @return string
+	 */
+	public function theme_version() {
+		return '0.4.0';
 	}
 
 	/**

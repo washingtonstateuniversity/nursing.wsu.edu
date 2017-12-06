@@ -532,3 +532,127 @@ span.slide-title-next-container {
 .campus-links-hide:hover {
 	color: #c60c30;
 }
+
+/* Archive layout */
+.row .deck {
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+/* CSS Grid fallback */
+.row .deck {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	flex: 1;
+	min-width: 250px;
+}
+
+/* CSS Grid */
+.row .deck {
+	display: grid;
+	grid-column-gap: 0;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* Archive cards */
+.card {
+	box-sizing: border-box;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+.card:hover {
+	background-color: #eff0f1;
+}
+
+.card-image a {
+	display: block;
+	height: 0;
+	padding-bottom: 57.5%;
+	position: relative;
+}
+
+.column .card-image a:hover {
+	border-bottom: 1px solid transparent;
+}
+
+.card-image img {
+	height: 100% !important;
+	max-width: 100% !important;
+	max-height: 100%;
+	object-fit: cover;
+	object-position: 50%;
+	position: absolute;
+	width: 100%;
+}
+
+.card-title {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: normal;
+	margin: 1rem 0 .5rem;
+}
+
+.card-excerpt p {
+	font-size: 15px;
+}
+
+.card-excerpt .more-link {
+	display: none;
+}
+
+.card-cta {
+	background: url(images/icon-arrow-right.svg) left center no-repeat;
+	background-size: 8px;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0 0 0 14px;
+}
+
+.pager {
+	padding-bottom: 2rem;
+}
+
+/* Center of Excellence badge for home page */
+.home main {
+	position: relative;
+}
+
+.excellence-badge {
+	height: auto;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: 180px;
+	z-index: 1;
+}
+
+@media screen and (max-width: 791px) {
+
+	.excellence-badge {
+		top: calc(50px + 1rem);
+	}
+}
+
+@media screen and (max-width: 693px) {
+
+	.builder-banner-inner-content {
+		justify-content: flex-end;
+		padding-bottom: 2rem;
+	}
+
+	.excellence-badge {
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 599px) {
+
+	.excellence-badge {
+		top: calc(50px + 2rem);
+		width: 125px;
+	}
+}
