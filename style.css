@@ -632,4 +632,47 @@ span.slide-title-next-container {
 .pager {
 	padding-bottom: 2rem;
 }
+
+/* Center of Excellence badge for home page */
+.home main {
+	position: relative;
+}
+
+.excellence-badge {
+	height: auto;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: 180px;
+	z-index: 1;
+}
+
+@media screen and (max-width: 791px) {
+
+	.excellence-badge {
+		top: calc(50px + 1rem);
+	}
+}
+
+@media screen and (max-width: 693px) {
+
+	.builder-banner-inner-content {
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		padding-bottom: 2rem;
+	}
+
+	.excellence-badge {
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 599px) {
+
+	.excellence-badge {
+		top: calc(50px + 2rem);
+		width: 125px;
+	}
+}
 /*# sourceMappingURL=style.css.map */
