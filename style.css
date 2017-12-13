@@ -34,6 +34,10 @@ span.slide-title-next-container {
 	}
 }
 
+.pager {
+	padding-bottom: 2rem;
+}
+
 /* Archive layout */
 .row .deck--news {
 	margin-left: -1rem;
@@ -132,10 +136,6 @@ span.slide-title-next-container {
 	.card--news {
 		min-width: 0;
 	}
-}
-
-.pager {
-	padding-bottom: 2rem;
 }
 
 /* Center of Excellence badge for home page */
