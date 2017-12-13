@@ -495,91 +495,49 @@ span.slide-title-next-container {
 	}
 }
 
-@media screen and (max-width: 550px) {
-
-	.fat-footer-menu {
-		display: none;
-	}
-}
-
-/* - closing Xs - */
-.close-header-drawer,
-.close-header-search,
-.campus-links-close {
-	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
-	color: #fff;
-	font-size: 2rem;
-	font-weight: 300;
-	cursor: pointer;
-	transition: color .3s ease;
-}
-
-.campus-links-close {
-	top: 2rem;
-	bottom: inherit;
-	right: 2rem;
-	font-size: 4rem;
-}
-
-.campus-links-hide {
-	display: none;
-}
-
-.close-header-drawer:hover,
-.close-header-search:hover,
-.campus-links-hide:hover {
-	color: #c60c30;
-}
-
 /* Archive layout */
-.row .deck {
+.row .deck--news {
 	margin-left: -1rem;
 	margin-right: -1rem;
 }
 
 /* CSS Grid fallback */
-.row .deck {
+.row .deck--news {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.card {
+.card--news {
 	flex: 1;
 	min-width: 250px;
 }
 
 /* CSS Grid */
-.row .deck {
+.row .deck--news {
 	display: grid;
 	grid-column-gap: 0;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 /* Archive cards */
-.card {
+.card--news {
 	box-sizing: border-box;
 	margin-bottom: 2rem;
 	padding: 1rem;
 }
 
-.card:hover {
-	background-color: #eff0f1;
-}
-
-.card-image a {
+.card--news .card-image a {
 	display: block;
 	height: 0;
 	padding-bottom: 57.5%;
 	position: relative;
 }
 
-.column .card-image a:hover {
+.column .card--news .card-image a:hover {
 	border-bottom: 1px solid transparent;
 }
 
-.card-image img {
+.card--news .card-image img {
 	height: 100% !important;
 	max-width: 100% !important;
 	max-height: 100%;
@@ -589,27 +547,45 @@ span.slide-title-next-container {
 	width: 100%;
 }
 
-.card-title {
+.card--news .card-title {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: normal;
 	margin: 1rem 0 .5rem;
 }
 
-.card-excerpt p {
+.card--news .card-excerpt p {
 	font-size: 15px;
 }
 
-.card-excerpt .more-link {
+.card--news .card-excerpt .more-link {
 	display: none;
 }
 
-.card-cta {
+.card--news .card-cta {
 	background: url(images/icon-arrow-right.svg) left center no-repeat;
 	background-size: 8px;
 	font-size: 16px;
 	font-weight: 400;
 	padding: 0 0 0 14px;
+}
+
+@media only screen and (max-width: 693px) {
+
+	#binder .deck--news {
+		width: calc(100% + 2rem);
+	}
+}
+
+@media only screen and (max-width: 346px) {
+
+	.row .deck--news {
+		display: block;
+	}
+
+	.card--news {
+		min-width: 0;
+	}
 }
 
 .pager {

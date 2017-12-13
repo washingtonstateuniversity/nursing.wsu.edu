@@ -1,6 +1,6 @@
 <section class="row side-right gutter pad-top">
 
-	<div class="column one deck">
+	<div class="column one deck deck--news">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
