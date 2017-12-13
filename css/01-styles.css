@@ -24,13 +24,6 @@ span.slide-title-next-container {
 	}
 }
 
-@media screen and (max-width: 700px) {
-
-	.home .main-header {
-		display: none;
-	}
-}
-
 /* Archive layout */
 .row .deck--news {
 	margin-left: -1rem;
