@@ -174,3 +174,175 @@
 		width: 150px;
 	}
 }
+
+/* Directory page filters */
+.wsu-people-filters {
+	font-size: 0;
+	margin-bottom: 2rem;
+}
+
+.wsu-people-filter {
+	display: inline-block;
+	margin-right: 32px;
+	vertical-align: top;
+}
+
+@media only screen and (max-width: 693px) {
+
+	.wsu-people-filter {
+		display: block;
+		margin: 0 0 32px;
+	}
+}
+
+.wsu-people-filters .search input,
+.wsu-people-filter-label,
+.wsu-people-filter-label:hover,
+.wsu-people-filter-label:focus {
+	background: none;
+	border: 1px solid #a60f2d;
+	border-radius: 0;
+	color: #a60f2d;
+	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: normal;
+	padding: 12px 32px;
+	transition: background .4s, border-color .4s, color .4s;
+	width: 100%;
+}
+
+.wsu-people-filters .search input::placeholder {
+	color: #a60f2d;
+	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	opacity: 1;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.wsu-people-filters .search input:focus,
+.wsu-people-filters .search input:hover,
+.wsu-people-filter-label:hover,
+.wsu-people-filter-label:focus,
+.wsu-people-filter-label[aria-expanded="true"] {
+	border: 1px solid #737373;
+	color: #404040;
+	outline: none;
+}
+
+.wsu-people-filters .search input:focus,
+.wsu-people-filter-label:focus {
+	background: #e5e5e5;
+}
+
+.wsu-people-filters .search input:focus::placeholder,
+.wsu-people-filters .search input:focus:hover::placeholder {
+	color: #e5e5e5;
+}
+
+.wsu-people-filters .search input:hover::placeholder {
+	color: #404040;
+}
+
+.wsu-people-wrapper .wsu-people-filter-label {
+	padding-right: 54px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.wsu-people-filter-label:before,
+.wsu-people-filter-label:after {
+	background-color: #a60f2d;
+	content: "";
+	display: block;
+	position: absolute;
+	transition: background .4s;
+}
+
+.wsu-people-filter-label:focus:before,
+.wsu-people-filter-label:focus:after,
+.wsu-people-filter-label:hover:before,
+.wsu-people-filter-label:hover:after,
+.wsu-people-filter-label[aria-expanded="true"]:before,
+.wsu-people-filter-label[aria-expanded="true"]:after {
+	background-color: #404040;
+}
+
+.wsu-people-filter-label:before {
+	height: 2px;
+	margin-top: -1px;
+	position: absolute;
+	right: 32px;
+	top: 50%;
+	width: 12px;
+}
+
+.wsu-people-filter-label:after {
+	height: 12px;
+	right: 37px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: height .4s;
+	width: 2px;
+}
+
+.wsu-people-filter-label[aria-expanded="true"]:after {
+	height: 0;
+}
+
+.wsu-people-filter-terms {
+	border: 1px solid #737373;
+	border-top: 0;
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wsu-people-filter-terms label {
+	display: block;
+}
+
+.wsu-people-filter-terms input[type="checkbox"] {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.wsu-people-filter-terms span {
+	color: #404040;
+	cursor: pointer;
+	display: block;
+	line-height: normal;
+	padding: 12px 32px;
+	transition: background .4s, color .4s, font-weight .4s;
+}
+
+.wsu-people-filter-terms :focus + span,
+.wsu-people-filter-terms span:hover {
+	background: #e5e5e5;
+}
+
+.wsu-people-filter-terms :checked + span {
+	background: #a60f2d;
+	color: #fff;
+}
+
+.wsu-people-filter-terms :focus + span {
+	font-weight: 600;
+}
+
+.wsu-people-filter-terms :checked:focus + span,
+.wsu-people-filter-terms :checked + span:hover {
+	background: #ca1237;
+	color: #fff;
+}
