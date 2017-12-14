@@ -1,4 +1,24 @@
-/* Archive cards */
+/* Archive cards layout for browsers without Grid support */
+.row .deck--news {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card--news {
+	flex: 1 0 250px;
+}
+
+/* Archive cards layout for browsers with Grid support */
+@supports (display: grid) {
+
+	.row .deck--news {
+		display: grid;
+		grid-column-gap: 0;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+}
+
+/* Archive cards layout (for all browsers) and typography */
 .card--news {
 	box-sizing: border-box;
 	margin-bottom: 2rem;
@@ -108,30 +128,92 @@
 	}
 }
 
-/* People cards */
+/* People cards layout for browsers without Grid support */
+.wsu-people {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wsu-person {
+	flex: 1 1 300px;
+}
+
+.wsu-person .name,
+.wsu-person .contact {
+	clear: both;
+	float: right;
+	width: calc(100% - 140px - 1rem);
+}
+
+.wsu-person .photo {
+	float: left;
+	width: 140px;
+}
+
+.wsu-person .photo + .contact {
+	clear: none;
+}
+
+.wsu-person .card:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/* People cards layout for browsers with Grid support */
+@supports (display: grid) {
+
+	.wsu-people {
+		display: grid;
+		grid-column-gap: 0;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	.wsu-person .card {
+		display: grid;
+		grid-column-gap: 1rem;
+		grid-template-columns: 140px auto;
+		grid-template-rows: auto 1fr;
+	}
+
+	.wsu-person .name,
+	.wsu-person .contact {
+		width: auto;
+	}
+
+	.wsu-person .name {
+		grid-column-start: 2;
+	}
+
+	.wsu-person .photo {
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+
+	.wsu-person .contact {
+		grid-row-start: 2;
+		grid-column-start: 2;
+	}
+
+	.wsu-person .card:after {
+		content: none;
+	}
+}
+
+/* People cards layout (for all browsers) and typography */
 .wsu-person {
 	margin-bottom: 2rem;
 }
 
 .wsu-person .card {
-	display: grid;
-	grid-column-gap: 1rem;
-	grid-template-columns: 140px auto;
-	grid-template-rows: auto 1fr;
 	padding: 1rem;
 }
 
 .wsu-person .name {
 	font-size: 18px;
 	font-weight: 400;
-	grid-column-start: 2;
 	line-height: normal;
 	padding-bottom: 10px;
-}
-
-.wsu-person .photo {
-	grid-row-start: 1;
-	grid-row-end: 3;
 }
 
 .wsu-person .photo a {
@@ -139,8 +221,6 @@
 }
 
 .wsu-person .contact {
-	grid-row-start: 2;
-	grid-column-start: 2;
 	overflow: hidden;
 }
 
@@ -159,6 +239,19 @@
 
 @media only screen and (max-width: 530px) {
 
+	/* For browsers without Grid support */
+	.wsu-person .name,
+	.wsu-person .photo,
+	.wsu-person .contact {
+		float: none;
+		width: 100%;
+	}
+
+	.wsu-person .card:after {
+		content: none;
+	}
+
+	/* For all browsers */
 	.wsu-people,
 	.wsu-person .card {
 		display: block;
