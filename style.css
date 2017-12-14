@@ -559,4 +559,24 @@ span.slide-title-next-container {
 	background: #ca1237;
 	color: #fff;
 }
+
+/* Single profile view */
+.single-wsuwp_people_profile .article-title {
+	padding-bottom: 0;
+}
+
+.wsuwp_people_profile .social-share-bar,
+.single-wsuwp_people_profile .column.two {
+	display: none;
+}
+
+.wsuwp_people_profile .contact span {
+	font-size: 15px;
+}
+
+.wsuwp_people_profile .contact .title {
+	font-size: 14px;
+	font-weight: 400;
+	padding-bottom: 6px;
+}
 /*# sourceMappingURL=style.css.map */
