@@ -1,62 +1,11 @@
-/*
- Theme Name:     WSU College of Nursing Theme
- Theme URI:      https://nursing.wsu.edu/
- Description:    A child theme of the Spine for WSU College of Nursing.
- Author:         WSU
- Author URI:     https://web.wsu.edu/
- Template:       spine
- Version:        0.4.1
-*/
-
-.builder-banner-inner-title {
-	display: none;
-}
-
-span.slide-title-next-container {
-	font-family: "Open Sans";
-	font-size: 24px;
-	font-weight: 300;
-}
-
-.slide-title-next {
-	font-style: italic;
-}
-
-.builder-banner-slide-title {
-	cursor: pointer;
-	font-weight: 700;
-}
-
-@media screen and (max-width: 791px) {
-
-	#binder.fluid main {
-		margin-top: 0;
-	}
-}
-
-.pager {
-	padding-bottom: 2rem;
-}
-
-/* Archive layout */
-.row .deck--news {
-	margin-left: -1rem;
-	margin-right: -1rem;
-}
-
 /* Archive cards layout for browsers without Grid support */
 .row .deck--news {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .card--news {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 0 250px;
-	        flex: 1 0 250px;
+	flex: 1 0 250px;
 }
 
 /* Archive cards layout for browsers with Grid support */
@@ -91,10 +40,8 @@ span.slide-title-next-container {
 	height: 100% !important;
 	max-width: 100% !important;
 	max-height: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
-	-o-object-position: 50%;
-	   object-position: 50%;
+	object-fit: cover;
+	object-position: 50%;
 	position: absolute;
 	width: 100%;
 }
@@ -164,9 +111,7 @@ span.slide-title-next-container {
 @media screen and (max-width: 693px) {
 
 	.builder-banner-inner-content {
-		-webkit-box-pack: end;
-		    -ms-flex-pack: end;
-		        justify-content: flex-end;
+		justify-content: flex-end;
 		padding-bottom: 2rem;
 	}
 
@@ -185,17 +130,12 @@ span.slide-title-next-container {
 
 /* People cards layout for browsers without Grid support */
 .wsu-people {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .wsu-person {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 1 300px;
-	        flex: 1 1 300px;
+	flex: 1 1 300px;
 }
 
 .wsu-person .name,
@@ -366,36 +306,6 @@ span.slide-title-next-container {
 	width: 100%;
 }
 
-.wsu-people-filters .search input::-webkit-input-placeholder {
-	color: #a60f2d;
-	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-	font-size: 12px;
-	font-style: normal;
-	opacity: 1;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.wsu-people-filters .search input:-ms-input-placeholder {
-	color: #a60f2d;
-	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-	font-size: 12px;
-	font-style: normal;
-	opacity: 1;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.wsu-people-filters .search input::-ms-input-placeholder {
-	color: #a60f2d;
-	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-	font-size: 12px;
-	font-style: normal;
-	opacity: 1;
-	text-align: center;
-	text-transform: uppercase;
-}
-
 .wsu-people-filters .search input::placeholder {
 	color: #a60f2d;
 	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
@@ -421,36 +331,9 @@ span.slide-title-next-container {
 	background: #e5e5e5;
 }
 
-.wsu-people-filters .search input:focus::-webkit-input-placeholder,
-.wsu-people-filters .search input:focus:hover::-webkit-input-placeholder {
-	color: #e5e5e5;
-}
-
-.wsu-people-filters .search input:focus:-ms-input-placeholder,
-.wsu-people-filters .search input:focus:hover:-ms-input-placeholder {
-	color: #e5e5e5;
-}
-
-.wsu-people-filters .search input:focus::-ms-input-placeholder,
-.wsu-people-filters .search input:focus:hover::-ms-input-placeholder {
-	color: #e5e5e5;
-}
-
 .wsu-people-filters .search input:focus::placeholder,
 .wsu-people-filters .search input:focus:hover::placeholder {
 	color: #e5e5e5;
-}
-
-.wsu-people-filters .search input:hover::-webkit-input-placeholder {
-	color: #404040;
-}
-
-.wsu-people-filters .search input:hover:-ms-input-placeholder {
-	color: #404040;
-}
-
-.wsu-people-filters .search input:hover::-ms-input-placeholder {
-	color: #404040;
 }
 
 .wsu-people-filters .search input:hover::placeholder {
@@ -494,9 +377,7 @@ span.slide-title-next-container {
 	height: 12px;
 	right: 37px;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	transform: translateY(-50%);
 	transition: height .4s;
 	width: 2px;
 }
@@ -520,8 +401,7 @@ span.slide-title-next-container {
 .wsu-people-filter-terms input[type="checkbox"] {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
-	-webkit-clip-path: inset(50%);
-	        clip-path: inset(50%);
+	clip-path: inset(50%);
 	height: 1px;
 	margin: -1px;
 	overflow: hidden;
@@ -579,4 +459,3 @@ span.slide-title-next-container {
 	font-weight: 400;
 	padding-bottom: 6px;
 }
-/*# sourceMappingURL=style.css.map */

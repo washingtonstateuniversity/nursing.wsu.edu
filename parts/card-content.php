@@ -1,4 +1,4 @@
-<article class="card">
+<article class="card card--news">
 
 	<?php if ( spine_has_featured_image() ) { ?>
 	<figure class="card-image">
