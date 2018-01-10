@@ -198,6 +198,10 @@ span.slide-title-next-container {
 	        flex: 1 1 300px;
 }
 
+.wsu-person .photo a:hover {
+	border-bottom: none;
+}
+
 .wsu-person .name,
 .wsu-person .contact {
 	clear: both;
