@@ -19,7 +19,7 @@
 		<?php if ( $display['photo'] ) { ?>
 		<figure class="photo">
 			<?php if ( $display['link'] ) { ?><a href="<?php echo esc_url( $display['link'] ); ?>"><?php } ?>
-			<img src="<?php echo esc_url( plugins_url( 'images/placeholder.png', dirname( __FILE__ ) ) ); ?>" data-photo="<?php echo esc_url( $display['photo']->medium ); ?>" alt="<?php echo esc_html( $display['name'] ); ?>" />
+			<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/placeholder.png' ); ?>" data-photo="<?php echo esc_url( $display['photo']->medium ); ?>" alt="<?php echo esc_html( $display['name'] ); ?>" />
 			<?php if ( $display['link'] ) { ?></a><?php } ?>
 		</figure>
 		<?php } ?>
