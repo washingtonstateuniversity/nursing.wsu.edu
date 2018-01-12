@@ -129,6 +129,11 @@
 }
 
 /* People cards layout for browsers without Grid support */
+.page-template-people .sitetitle,
+.single-wsuwp_people_profile .sitetitle {
+	text-transform: uppercase;
+}
+
 .page-template-people .article-title {
 	display: none;
 }
