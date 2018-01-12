@@ -129,6 +129,10 @@
 }
 
 /* People cards layout for browsers without Grid support */
+.page-template-people .article-title {
+	display: none;
+}
+
 .wsu-people {
 	display: flex;
 	flex-wrap: wrap;
@@ -446,7 +450,7 @@
 
 /* Single profile view */
 .single-wsuwp_people_profile .article-title {
-	padding-bottom: 0;
+	display: none;
 }
 
 .wsuwp_people_profile .social-share-bar,
