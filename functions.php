@@ -20,7 +20,7 @@ class WSU_Nursing {
 	 * @return string
 	 */
 	public function theme_version() {
-		return '0.4.3';
+		return '0.4.4';
 	}
 
 	/**
